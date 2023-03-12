@@ -1,0 +1,27 @@
+<html>
+<head>
+     <title>Tetris</title>
+</head>
+<style type="text/css">
+body {overflow:hidden; background: rgb(14, 47, 64);}
+  #tetris {
+    width: 274px;
+    border: 3px solid rgb(220, 239, 204);
+    padding: 20px;
+  }
+  #score {
+    color: rgb(220, 239, 204);
+
+  }
+</style>
+<body>
+    <audio id = 'player'loop = 'loop'><source src="tetris.mp3" type="audio/mpeg" /></audio>
+  <div>
+      <button onclick="document.getElementById('player').play()">🕪</button>
+      <button onclick="document.getElementById('player').pause()">🔇</button>
+  </div>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <script src="tetriscurr.js"></script>
+    <div id="score" ></div>
+</body>
+</html>
